@@ -1,0 +1,46 @@
+<script>
+const numDeLinhas1 = parseInt(prompt("Informe o número de linhas da sua matriz 1:"));
+const numDeColunas1 = parseInt(prompt("Agora informe o número de colunas da sua matriz 1:"));
+const numDeLinhas2 = parseInt(prompt("Informe o número de linhas da sua matriz 2:"));
+const numDeColunas2 = parseInt(prompt("Agora informe o número de colunas da sua matriz 2:"));
+let matriz1 = [];
+let matriz2 = [];
+let contador = 0;
+let valoresLinha1 = [];
+let valoresColuna1 = [];
+let valoresLinha2 = [];
+let valoresColuna2 = [];
+
+if (numDeLinhas1 === numDeLinhas2 && numDeColunas1 === numDeColunas2) {
+    if (numDeLinhas1 >= 1 || numDeLinhas1 > 1) {
+for (let contador = 1; contador <= numDeLinhas1; contador++) {
+ valoresLinha1 = (Number(prompt(`Insira o ${contador}° valor da linha da primeira Matriz:`)))
+}
+    } 
+    if (numDeColunas1 > 1 || numDeColunas1 >= 1){
+for (let contador = 1; contador <= numDeColunas1; contador++) {
+    valoresColuna1 = (Number(prompt(`Insira o ${contador}° valor da coluna da primeira Matriz:`)))
+}}
+if (numDeLinhas2 >= 1 || numDeLinhas2 > 1) {
+for (let contador = 1; contador <= numDeLinhas2; contador++) {
+ valoresLinha2 = (Number(prompt(`Insira o ${contador}° valor da linha da segunda Matriz:`)))
+}} if (numDeColunas2 > 1 || numDeColunas2 >= 1) {
+for (let contador = 1; contador <= numDeColunas2; contador++) {
+    valoresColuna2 = (Number(prompt(`Insira o ${contador}° valor da coluna da segunda Matriz:`)))
+}}
+if (valoresLinha1 === valoresLinha2 && valoresColuna1 === valoresColuna2) {
+alert("As matrizes são iguais")
+} else if(valoresLinha1 === valoresLinha2)
+{
+    alert("As matrizes são iguais") 
+}
+else {
+    alert("Os valores das matrizes são diferentes!!")
+}
+} else {
+    alert("A ordem das matrizes são diferentes!!")
+}
+
+
+
+</script>
